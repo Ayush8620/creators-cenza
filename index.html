@@ -3422,7 +3422,7 @@ ALTER TABLE creator_applications DISABLE ROW LEVEL SECURITY;
                 //     }
                 // }
 
-                const res = await fetch("/api/send-email", {
+                const res = await fetch("/send-email", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"
@@ -4287,5 +4287,6 @@ ALTER TABLE creator_applications DISABLE ROW LEVEL SECURITY;
         });
     </script>
 </body>
+
 
 </html>
