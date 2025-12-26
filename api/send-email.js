@@ -7,7 +7,8 @@ const ALLOWED_ORIGINS = [
     "http://localhost",
     "http://127.0.0.1",
     "http://127.0.0.1:5500",
-    "http://localhost:5500"
+    "http://localhost:5500",
+    "https://creators-cenza.vercel.app"
 ];
 
 export default async function handler(req, res) {
@@ -88,3 +89,4 @@ export default async function handler(req, res) {
         return res.status(500).json({ error: "Email failed", details: String(err.message || err) });
     }
 }
+
